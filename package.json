@@ -13,6 +13,6 @@
     "@catppuccin/tailwindcss": "^0.1.6"
   },
   "scripts": {
-    "build:css": "bunx tailwindcss -i ./src/index.css -o ./src/style.css --minify"
+    "build:css": "bunx tailwindcss -i ./index.css -o ./style.css --minify"
   }
 }
