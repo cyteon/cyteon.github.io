@@ -8,72 +8,88 @@
         <meta property="og:title" content="Cyteon" />
     </head>
 
-    <body class="bg-ctp-base text-ctp-text w-full h-screen">
-        <div class="mx-5">
-            <h1 class="text-7xl font-semibold leading-snug">
-                Hi, I'm
-                <span
-                    class="text-transparent bg-gradient-to-r from-ctp-blue to-ctp-yellow inline-block bg-clip-text font-bold"
-                    >Cyteon</span
-                >
-            </h1>
-            <p class="leading-snug ml-1">
-                I am a developer from Norway specializing in frontend, backend,
-                game development and more.
-                <br />
-                Amongst my other projects i am making my own operating system
-                <a
-                    class="text-ctp-blue transition-all duration-300 hover:text-ctp-yellow"
-                    href="https://github.com/cyteon/catos"
-                    target="_blank"
-                    >catOS</a
-                >!
-                <br />
-                Check out my projects at my
-                <a
-                    class="text-ctp-blue transition-all duration-300 hover:text-ctp-yellow"
-                    href="https://github.com/cyteon"
-                    target="_blank"
-                    >github</a
-                >
-                or my games at
-                <a
-                    class="text-ctp-blue transition-all duration-300 hover:text-ctp-yellow"
-                    href="https://cyteon.itch.io"
-                    target="_blank"
-                    >itch.io</a
-                >!
-            </p>
-            <h2 class="text-2xl font-semibold my-3">
-                Languages, Technologies and Tools i use:
-            </h2>
-            <div class="flex flex-row flex-wrap">
-                <img
-                    src="https://go-skill-icons.vercel.app/api/icons?i=godot,unreal,py,go,ts,js"
-                    alt="languages"
-                    class="mt-1 mr-2 w-full sm:w-auto"
-                />
-                <img
-                    src="https://go-skill-icons.vercel.app/api/icons?i=rust,svelte,nextjs,html,css,tailwind"
-                    alt="languages"
-                    class="mt-1 w-full sm:w-auto"
-                />
+    <body class="bg-ctp-base text-ctp-text w-full h-screen flex flex-col">
+        <div class="mx-5 flex flex-col">
+            <div class="w-full lg:min-w-[50%]">
+                <h1 class="text-7xl font-semibold leading-snug">
+                    Hi, I'm
+                    <span
+                        class="text-transparent bg-gradient-to-r from-ctp-blue to-ctp-yellow inline-block bg-clip-text font-bold"
+                        >Cyteon</span
+                    >
+                </h1>
+                <p class="leading-snug ml-1">
+                    I am a developer from Norway specializing in frontend,
+                    backend, game development and more.
+                    <br />
+                    Amongst my other projects i am making my own operating
+                    system
+                    <a
+                        class="text-ctp-blue transition-all duration-300 hover:text-ctp-yellow"
+                        href="https://github.com/cyteon/catos"
+                        target="_blank"
+                        >catOS</a
+                    >!
+                    <br />
+                    Check out my projects at my
+                    <a
+                        class="text-ctp-blue transition-all duration-300 hover:text-ctp-yellow"
+                        href="https://github.com/cyteon"
+                        target="_blank"
+                        >github</a
+                    >
+                    or my games at
+                    <a
+                        class="text-ctp-blue transition-all duration-300 hover:text-ctp-yellow"
+                        href="https://cyteon.itch.io"
+                        target="_blank"
+                        >itch.io</a
+                    >!
+                </p>
+                <h2 class="text-2xl font-semibold my-3">
+                    Languages, Technologies and Tools i use:
+                </h2>
+                <div class="flex flex-row flex-wrap">
+                    <img
+                        src="https://go-skill-icons.vercel.app/api/icons?i=godot,unreal,py,go,ts,js"
+                        alt="languages"
+                        class="mt-1 mr-2 w-full sm:w-auto sm:mr-0"
+                    />
+                    <img
+                        src="https://go-skill-icons.vercel.app/api/icons?i=rust,svelte,nextjs,html,css,tailwind"
+                        alt="languages"
+                        class="mt-1 w-full sm:w-auto"
+                    />
+                </div>
+                <div class="flex flex-row flex-wrap">
+                    <img
+                        src="https://go-skill-icons.vercel.app/api/icons?i=vercel,mongodb,github,gitea,git"
+                        alt="tools"
+                        class="mt-1 mr-2 w-full sm:w-auto sm:mr-0"
+                    />
+                    <img
+                        src="https://go-skill-icons.vercel.app/api/icons?i=zed,proxmox,linux,arch,debian,windows"
+                        alt="tools"
+                        class="mt-1 w-full sm:w-auto"
+                    />
+                </div>
             </div>
-            <div class="flex flex-row flex-wrap">
-                <img
-                    src="https://go-skill-icons.vercel.app/api/icons?i=vercel,mongodb,github,gitea,git"
-                    alt="tools"
-                    class="mt-1 mr-2 w-full sm:w-auto"
-                />
-                <img
-                    src="https://go-skill-icons.vercel.app/api/icons?i=zed,proxmox,linux,arch,debian,windows"
-                    alt="tools"
-                    class="mt-1 w-full sm:w-auto"
-                />
+            <div class="my-5 flex flex-row flex-wrap">
+                <div class="card">
+                    <img
+                        src="public/catos.webp"
+                        alt="image"
+                        height="250em"
+                        width="250em"
+                    />
+                    <h1>CatOS</h1>
+                    <p>An OS in Rust</p>
+                    <a href="https://github.com/cyteon/catos">Github</a>
+                </div>
             </div>
         </div>
 
-        <footer class="absolute bottom-0 left-0 text-ctp-subtext0">
+        <footer class="mt-auto text-ctp-subtext0 text-sm">
             All rights reserved &copy; Cyteon 2024
         </footer>
     </body>

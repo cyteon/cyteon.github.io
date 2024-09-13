@@ -4,13 +4,11 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "tailwindcss": "^3.4.10"
+    "tailwindcss": "^3.4.10",
+    "@catppuccin/tailwindcss": "^0.1.6"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@catppuccin/tailwindcss": "^0.1.6"
   },
   "scripts": {
     "build:css": "bunx tailwindcss -i ./index.css -o ./style.css --minify"
