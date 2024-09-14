@@ -11,6 +11,6 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build:css": "bunx tailwindcss -i ./index.css -o ./style.css --minify"
+    "build:css": "bunx tailwindcss -i ./src/index.css -o ./src/style.css --minify"
   }
 }
