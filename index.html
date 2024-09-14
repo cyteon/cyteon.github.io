@@ -2,9 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+
         <link rel="stylesheet" href="src/style.css" />
-        <script src="src/index.js" defer></script>
+        <script src="src/skills.js" defer></script>
+        <script src="src/projects.js" defer></script>
+
         <title>Cyteon</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Cyteon" />
     </head>
@@ -50,19 +54,7 @@
 
                 <div id="skill_holder" class="flex flex-col ml-1"></div>
             </div>
-            <div class="my-5 flex flex-row flex-wrap">
-                <div class="card">
-                    <img
-                        src="public/catos.webp"
-                        alt="image"
-                        height="250em"
-                        width="250em"
-                    />
-                    <h1>CatOS</h1>
-                    <p>An OS in Rust</p>
-                    <a href="https://github.com/cyteon/catos">Github</a>
-                </div>
-            </div>
+            <div class="my-5 flex flex-row flex-wrap" id="project_holder"></div>
         </div>
 
         <footer class="mt-auto text-ctp-subtext0 text-sm">
