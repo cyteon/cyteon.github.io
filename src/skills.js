@@ -1,3 +1,5 @@
+/*  All rights reserved © Cyteon 2024 */
+
 const skillGroups = [
   {
     label: "Languages - Frontend",
