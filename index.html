@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="src/style.css" />
+        <script src="src/index.js" defer></script>
         <title>Cyteon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Cyteon" />
@@ -19,8 +20,8 @@
                     >
                 </h1>
                 <p class="leading-snug ml-1">
-                    I am a developer from Norway specializing in frontend,
-                    backend, game development and more.
+                    I am a developer from Norway doing frontend, backend, game
+                    development and more.
                     <br />
                     Amongst my other projects i am making my own operating
                     system
@@ -46,33 +47,8 @@
                         >itch.io</a
                     >!
                 </p>
-                <h2 class="text-2xl font-semibold my-3">
-                    Languages, Technologies and Tools i use:
-                </h2>
-                <div class="flex flex-row flex-wrap">
-                    <img
-                        src="https://go-skill-icons.vercel.app/api/icons?i=godot,unreal,py,go,ts,js"
-                        alt="languages"
-                        class="mt-1 mr-2 w-full sm:w-auto sm:mr-0"
-                    />
-                    <img
-                        src="https://go-skill-icons.vercel.app/api/icons?i=rust,svelte,nextjs,html,css,tailwind"
-                        alt="languages"
-                        class="mt-1 w-full sm:w-auto"
-                    />
-                </div>
-                <div class="flex flex-row flex-wrap">
-                    <img
-                        src="https://go-skill-icons.vercel.app/api/icons?i=vercel,mongodb,github,gitea,git"
-                        alt="tools"
-                        class="mt-1 mr-2 w-full sm:w-auto sm:mr-0"
-                    />
-                    <img
-                        src="https://go-skill-icons.vercel.app/api/icons?i=zed,proxmox,linux,arch,debian,windows"
-                        alt="tools"
-                        class="mt-1 w-full sm:w-auto"
-                    />
-                </div>
+
+                <div id="skill_holder" class="flex flex-col"></div>
             </div>
             <div class="my-5 flex flex-row flex-wrap">
                 <div class="card">
