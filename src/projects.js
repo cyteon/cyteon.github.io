@@ -26,7 +26,7 @@ const projects = [
     ],
     links: [
       {
-        label: "Webiste",
+        label: "Website",
         url: "https://rabbit.cyteon.tech",
       },
       {
