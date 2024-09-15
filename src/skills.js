@@ -2,7 +2,7 @@
 
 const skillGroups = [
   {
-    label: "Languages - Frontend",
+    label: "Frontend",
     icons: [
       "https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white",
       "https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white",
@@ -14,10 +14,11 @@ const skillGroups = [
     ],
   },
   {
-    label: "Languages - Backend",
+    label: "Backend",
     icons: [
       "https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white",
       "https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white",
+      "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black",
     ],
   },
   {
