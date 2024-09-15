@@ -16,6 +16,21 @@ const projects = [
     ],
   },
   {
+    title: "Hell's Cat",
+    description:
+      "An short game i made in around 3 weeks for MVM23, an month long gamejam",
+    image: "public/hells_cat.png",
+    icons: [
+      "https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godot-engine&logoColor=white",
+    ],
+    links: [
+      {
+        label: "Game",
+        url: "https://cyteon.itch.io/hell-cat",
+      },
+    ],
+  },
+  {
     title: "Rabbit",
     description: "An reddit clone made with svelte",
     image: "public/rabbit.webp",
@@ -60,7 +75,7 @@ projects.forEach((project) => {
   card.append(description);
 
   var icons = document.createElement("div");
-  icons.className = "flex flex-row flex-wrap";
+  icons.className = "flex flex-row flex-wrap my-1";
   project.icons.forEach((icon) => {
     var img = document.createElement("img");
     img.src = icon;
