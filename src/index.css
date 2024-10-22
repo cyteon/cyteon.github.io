@@ -33,3 +33,11 @@
 .card a:hover {
     @apply text-ctp-yellow;
 }
+
+body {
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, #363a4f 1px, transparent 1px),
+      linear-gradient(to bottom, #363a4f 1px, transparent 1px);
+    background-position: center;
+  }
