@@ -1,3 +1,5 @@
+import catppuccin from "@catppuccin/tailwindcss";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./**/*.html", "./src/**/*.js"],
@@ -5,7 +7,7 @@ export default {
     extend: {},
   },
   plugins: [
-    require("@catppuccin/tailwindcss")({
+    catppuccin({
       // prefix to use, e.g. `text-pink` becomes `text-ctp-pink`.
       // default is `false`, which means no prefix
       prefix: "ctp",

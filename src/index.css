@@ -34,10 +34,68 @@
     @apply text-ctp-yellow;
 }
 
+.tabButton {
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    font-weight: semibold;
+    border-bottom: 2px solid transparent;
+    margin-right: 0.5rem;
+}
+
+.tabButton:hover {
+    @apply border-b-2 border-b-ctp-yellow/80;
+}
+
+.tabButton.active {
+    @apply border-b-2 border-b-ctp-yellow;
+}
+
 body {
     background-size: 20px 20px;
-    background-image:
-      linear-gradient(to right, #363a4f 1px, transparent 1px),
-      linear-gradient(to bottom, #363a4f 1px, transparent 1px);
+    background-image: linear-gradient(to right, #363a4f 1px, transparent 1px),
+        linear-gradient(to bottom, #363a4f 1px, transparent 1px);
     background-position: center;
-  }
+}
+
+.project-card {
+    border-radius: 0.5rem;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+
+    @apply border border-ctp-surface1;
+}
+
+.project-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    overflow-wrap: break-word;
+    @apply text-ctp-subtext0;
+}
+
+.project-links {
+}
+
+.project-card a {
+    transition: color 0.3s ease-in-out;
+    @apply text-ctp-blue;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+    @apply text-ctp-yellow;
+}
+
+.project-card img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}

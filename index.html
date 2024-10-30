@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
 
         <link rel="stylesheet" href="src/style.css" />
+        <script src="src/index.js" defer></script>
 
         <title>Cyteon</title>
 
@@ -52,7 +53,7 @@
                     btw
                 </p>
             </div>
-            <div class="flex flex-row mt-[-0px]">
+            <div class="flex flex-row">
                 <a href="https://github.com/cyteon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -79,9 +80,38 @@
                 </a>
             </div>
         </div>
-        <img src="/public/waves.svg" class="" />
-        <div class="bg-ctp-mantle h-full">
-            
+        <img src="public/waves.svg" class="mt-10" />
+        <div
+            class="bg-ctp-mantle h-full w-full flex flex-col overflow-y-auto items-center pb-5"
+        >
+            <div class="flex">
+                <div class="mb-5">
+                    <button
+                        class="tabButton active"
+                        onclick="setTab(event, 'featured')"
+                    >
+                        Featured
+                    </button>
+                    <button
+                        class="tabButton"
+                        onclick="setTab(event, 'repositories')"
+                    >
+                        Repositories
+                    </button>
+                </div>
+            </div>
+            <div class="tabcontent" id="featured">
+                <div
+                    id="featuredcontainer"
+                    class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                ></div>
+            </div>
+            <div class="tabcontent" style="display: none" id="repositories">
+                <div
+                    id="repocontainer"
+                    class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                ></div>
+            </div>
         </div>
     </body>
 </html>
