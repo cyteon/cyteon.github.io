@@ -81,36 +81,60 @@
             </div>
         </div>
         <img src="public/waves.svg" class="mt-10" />
-        <div
-            class="bg-ctp-mantle w-full flex flex-col items-center pb-5"
-        >
-            <div class="flex">
-                <div class="mb-5">
-                    <button
-                        class="tabButton active"
-                        onclick="setTab(event, 'featured')"
-                    >
-                        Featured
-                    </button>
-                    <button
-                        class="tabButton"
-                        onclick="setTab(event, 'repositories')"
-                    >
-                        Repositories
-                    </button>
+        <div class="bg-ctp-mantle h-full">
+            <div class="w-full flex flex-col items-center pb-5">
+                <div class="flex">
+                    <div class="mb-5">
+                        <button
+                            class="tabButton active"
+                            onclick="setTab(event, 'featured')"
+                        >
+                            Featured
+                        </button>
+                        <button
+                            class="tabButton"
+                            onclick="setTab(event, 'repositories')"
+                        >
+                            Repositories
+                        </button>
+                        <button
+                            class="tabButton"
+                            onclick="setTab(event, 'about')"
+                        >
+                            About Me
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="tabcontent" id="featured">
+                <div class="tabcontent" id="featured">
+                    <div
+                        id="featuredcontainer"
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                    ></div>
+                </div>
+                <div class="tabcontent" style="display: none" id="repositories">
+                    <div
+                        id="repocontainer"
+                        class="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                    ></div>
+                </div>
                 <div
-                    id="featuredcontainer"
-                    class="grid grid-cols-1 sm:grid-cols-2 gap-4"
-                ></div>
-            </div>
-            <div class="tabcontent" style="display: none" id="repositories">
-                <div
-                    id="repocontainer"
-                    class="grid grid-cols-1 sm:grid-cols-2 gap-4"
-                ></div>
+                    class="tabcontent max-w-[410px]"
+                    style="display: none"
+                    id="about"
+                >
+                    <div class="gap-4 text-center">
+                        <p class="break-words text-lg mb-6">
+                            I'm cyteon, a developer from Norway! I am interested
+                            in fields like web development, software
+                            development, and game development.
+                        </p>
+                        <iframe
+                            src="https://lanyard.cnrad.dev/api/871722786006138960?bg=181926"
+                            width="410px"
+                            height="210px"
+                        ></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
