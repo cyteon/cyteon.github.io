@@ -106,6 +106,7 @@ body {
     font-size: 18px;
 }
 
+
 .Link--inTextBlock {
     @apply text-ctp-subtext0 !important;
 }
@@ -122,6 +123,8 @@ a.minibutton,
 span.minibutton,
 .clone-url-button > .clone-url-link {
     @apply bg-ctp-crust text-ctp-text !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
     border-color: #383838 !important;
     border-radius: 0 0 3px 3px !important;
     text-shadow: none !important;
@@ -153,7 +156,7 @@ body.blog pre > code,
     border: 0;
 }
 ::selection {
-    background: #24890d;
+    @apply bg-ctp-blue/50;
     color: #fff;
     text-shadow: none;
 }
