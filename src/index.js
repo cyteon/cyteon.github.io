@@ -1,5 +1,20 @@
 const featured_projects = [
   {
+    name: "PlenFS",
+    img: "https://cloud-5zddjnbq8-hack-club-bot.vercel.app/0image.png",
+    description: "A flight simulator made in godot, featuring a simple Cessna",
+    links: [
+      {
+        label: "Repository",
+        url: "https://github.com/Cyteon/PlenFS",
+      },
+      {
+        label: "Game",
+        url: "https://cyteon.itch.io/plenfs",
+      }
+    ],
+  },
+  {
     name: "The Watcher",
     img: "public/the-watcher.png",
     description: "An uptime monitor built in SolidJS. Batteries Included.",
