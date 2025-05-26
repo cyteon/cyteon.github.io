@@ -25,7 +25,7 @@ const featured_projects = [
       },
       {
         label: "My Instance",
-        url: "https://status2.cyteon.tech",
+        url: "https://status.cyteon.dev",
       },
     ],
   },
