@@ -24,9 +24,24 @@
     font-weight: 600;
 }
 
+a {
+    @apply text-ctp-blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code {
+    @apply bg-ctp-crust text-ctp-text border-ctp-surface0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    font-family: monospace;
+}
+
 .card a {
     font-size: 1rem;
-    @apply text-ctp-blue;
     transition: color ease-in-out 0.3s;
 }
 
