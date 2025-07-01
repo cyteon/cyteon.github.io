@@ -1,6 +1,6 @@
 <script lang="ts">
     import Links from "$lib/components/Links.svelte";
-    import { Github, Joystick } from "lucide-svelte";
+    import { Github, Joystick, Star } from "lucide-svelte";
     import { onMount } from "svelte";
 
     // too lazy to set type rn
@@ -77,7 +77,7 @@
     }, 1000);
 </script>
 
-<div class="px-2 md:w-3/5 mx-auto text-2xl font-mono">
+<div class="px-2 md:w-3/5 mx-auto text-2xl font-mono h-screen flex flex-col">
     <div class="flex w-full flex-col md:flex-row">
         <h1 class="text-transparent text-8xl leading-relaxed bg-gradient-to-r from-ctp-blue to-ctp-yellow bg-clip-text font-bold inline-block text-center">
             Cyteon
@@ -157,4 +157,10 @@
             </div>
         {/if}
     </div>
+
+    <h2 class="mt-8 flex text-3xl"><Star class="my-auto mr-2 text-ctp-yellow" size={24} /> Featured Projects</h2>
+
+    <footer class="mt-auto mb-4 text-sm text-ctp-subtext0">
+        All Rights Reserved &copy; {new Date().getFullYear()} Cyteon
+    </footer>
 </div>
