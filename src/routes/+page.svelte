@@ -1,5 +1,7 @@
 <script lang="ts">
     import Links from "$lib/components/Links.svelte";
+    import ProjectCard from "$lib/components/ProjectCard.svelte";
+    import { featuredProjects } from "$lib/projects";
     import { Github, Joystick, Star } from "lucide-svelte";
     import { onMount } from "svelte";
 
@@ -160,7 +162,13 @@
 
     <h2 class="mt-8 flex text-3xl"><Star class="my-auto mr-2 text-ctp-yellow" size={24} /> Featured Projects</h2>
 
-    <footer class="mt-auto mb-4 text-sm text-ctp-subtext0">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mb-4">
+        {#each featuredProjects as project}
+            <ProjectCard {project} />
+        {/each}
+    </div>
+
+    <footer class="mt-auto pb-4 text-sm text-ctp-subtext0">
         All Rights Reserved &copy; {new Date().getFullYear()} Cyteon
     </footer>
 </div>
