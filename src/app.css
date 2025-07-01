@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @import "@catppuccin/tailwindcss/config.css";
+
+a {
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--color-ctp-yellow);
+}
