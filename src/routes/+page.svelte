@@ -94,9 +94,9 @@
     }, 1000 * 60 * 5); // 5 mins
 </script>
 
-<div class="px-2 md:w-3/4 xl:w-3/5 mx-auto text-lg font-mono h-screen flex flex-col">
+<div class="px-2 md:w-3/4 xl:w-3/5 mx-auto text-xl h-screen flex flex-col">
     <div class="flex w-full flex-col md:flex-row">
-        <h1 class="text-transparent text-[5rem] leading-relaxed bg-gradient-to-r from-ctp-blue to-ctp-yellow bg-clip-text font-bold inline-block text-center">
+        <h1 class="text-transparent text-[5.2rem] leading-relaxed bg-gradient-to-r from-ctp-blue to-ctp-yellow bg-clip-text font-bold inline-block text-center">
             Cyteon
         </h1>
 
