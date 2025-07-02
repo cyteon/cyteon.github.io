@@ -77,19 +77,34 @@
             discordData.activities[0].timestamps.start = Date.now() - (Date.now() - discordData.activities[0].timestamps.start);
         }
     }, 1000);
+
+    // update discord data (incase activity changes for example)
+    setInterval(async () => {
+        try {
+            const response = await fetch("https://api.lanyard.rest/v1/users/871722786006138960");
+
+            if (!response.ok) {
+                throw new Error("Failed to fetch Discord status");
+            }
+
+            discordData = (await response.json()).data;
+        } catch (error) {
+            console.error("Error fetching Discord status:", error);
+        }
+    }, 1000 * 60 * 5); // 5 mins
 </script>
 
-<div class="px-2 md:w-3/5 mx-auto text-2xl font-mono h-screen flex flex-col">
+<div class="px-2 md:w-3/4 xl:w-3/5 mx-auto text-lg font-mono h-screen flex flex-col">
     <div class="flex w-full flex-col md:flex-row">
-        <h1 class="text-transparent text-8xl leading-relaxed bg-gradient-to-r from-ctp-blue to-ctp-yellow bg-clip-text font-bold inline-block text-center">
+        <h1 class="text-transparent text-[5rem] leading-relaxed bg-gradient-to-r from-ctp-blue to-ctp-yellow bg-clip-text font-bold inline-block text-center">
             Cyteon
         </h1>
 
         <Links />
     </div>
 
-    <div class="flex flex-col md:flex-row md:space-x-16">
-        <div class="md:max-w-2/3">
+    <div class="flex flex-col">
+        <div>
             <p class="text-center md:text-left mt-8 md:mt-0">
                 I'm Cyteon, a developer from Norway! I am interested in fields like web development, software development, and game development.
             </p>
@@ -106,9 +121,9 @@
         </div>
 
         {#if discordData}
-            <div class="flex flex-col border border-ctp-surface0 border-dashed p-2 rounded-md bg-ctp-mantle text-lg w-full h-fit mt-1">
+            <div class="w-full flex flex-col border border-ctp-surface0 border-dashed p-2 rounded-md bg-ctp-mantle text-lg w-full h-fit mt-1">
                 <div class="flex px-2">
-                    <h2>Discord Status</h2>
+                    <h2>Discord</h2>
                     <div class="ml-auto flex">
                         {#if discordData.discord_status == "online"}
                             <p>Online</p> <span class="bg-ctp-green size-4 my-auto ml-2 rounded-full"></span>
@@ -160,9 +175,9 @@
         {/if}
     </div>
 
-    <h2 class="mt-8 flex text-3xl"><Star class="my-auto mr-2 text-ctp-yellow" size={24} /> Featured Projects</h2>
+    <h2 class="my-8 flex text-3xl"><Star class="my-auto mr-2 text-ctp-yellow" size={24} /> Featured Projects</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 mb-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         {#each featuredProjects as project}
             <ProjectCard {project} />
         {/each}

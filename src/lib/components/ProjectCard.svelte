@@ -16,12 +16,12 @@
     }
 </script>
 
-<div class="flex flex-col border border-ctp-surface0 rounded-lg hover:border-ctp-blue transition-all duration-300 ease-in-out bg-ctp-mantle">
+<div class="flex flex-col border border-ctp-surface0 rounded-lg hover:border-ctp-blue bg-ctp-mantle">
     <img src={project.image} alt={project.title} class="rounded-t-lg" />
 
     <div class="flex flex-col p-4 h-full">
-        <h3 class="text-2xl font-bold">{project.title}</h3>
-        <p class="text-lg mb-auto">{project.description}</p>
+        <h3 class="text-xl font-bold">{project.title}</h3>
+        <p class="text-base mb-auto">{project.description}</p>
 
         <div class="flex mt-4">
             <div class="flex gap-2">

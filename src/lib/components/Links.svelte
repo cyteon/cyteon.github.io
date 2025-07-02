@@ -8,7 +8,7 @@
     }
 </script>
 
-<div class="md:ml-auto mt-[-32px] md:mt-10 flex justify-center md:justify-end">
+<div class="md:ml-auto mt-[-32px] md:mt-8 flex justify-center md:justify-end">
     <a href="/" class={path == "/" ? "underline" : ""}>home</a>
     <p class="mx-4 text-ctp-surface2">\</p>
     <a href="/projects" class={path == "/projects" ? "underline" : ""}>projects</a>
