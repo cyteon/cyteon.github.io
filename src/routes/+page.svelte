@@ -61,14 +61,14 @@
         let string = "";
         
         if (hoursDiff > 0) {
-            string += `${hoursDiff.toString().padStart(2, '0')}:`;
+            string += `${hoursDiff.toString().padStart(2, '0')}h:`;
         }
 
         if (minutesDiff > 0 || hoursDiff > 0) {
-            string += `${minutesDiff.toString().padStart(2, '0')}:`;
+            string += `${minutesDiff.toString().padStart(2, '0')}m:`;
         }
 
-        return string + `${secondsDiff.toString().padStart(2, '0')}`;
+        return string + `${secondsDiff.toString().padStart(2, '0')}s`;
     }
 
     // bad trick to make the elapsed time go up
@@ -103,7 +103,7 @@
         <Links />
     </div>
 
-    <div class="flex flex-col">
+    <div class="flex flex-col md:flex-row gap-8">
         <div>
             <p class="text-center md:text-left mt-8 md:mt-0">
                 I'm Cyteon, a developer from Norway! I am interested in fields like web development, software development, and game development.
@@ -113,7 +113,7 @@
                 I have currently accumulated <span class="text-ctp-yellow font-bold">{totalStars || "?"}</span> stars and <span class="text-ctp-yellow font-bold">{githubData?.followers || "?"}</span> followers on GitHub.
             </p>
 
-            <div class="my-5 text-[0.9em] flex justify-center md:justify-start">
+            <div class="mt-6 text-[0.9em] flex justify-center md:justify-start">
                 <a href="https://github.com/cyteon" class="flex" target="_blank" rel="noopener noreferrer"><Github class="my-auto mr-2" size={18} /> Github</a>
                 <p class="mx-4 text-ctp-surface2">\</p>
                 <a href="https://cyteon.itch.io" class="flex" target="_blank" rel="noopener noreferrer"><Joystick class="my-auto mr-2" size={18} /> Itch.io</a>
