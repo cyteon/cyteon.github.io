@@ -140,13 +140,21 @@
                 <div class="flex h-fit">
                     {#if discordData.activities.length > 0}
                         <div class="my-auto ml-2 mr-4 relative">
-                            <img
-                                class="rounded-md size-18"
-                                src={`https://cdn.discordapp.com/app-assets/${discordData.activities[0].application_id}/${discordData.activities[0].assets.large_image}.png`}
-                                alt="activity_big"
-                            />
+                            {#if discordData.activities[0].assets?.large_image}
+                                <img
+                                    class="absolute bottom-[-6px] right-[-6px] size-8 rounded-full border-2 border-ctp-mantle"
+                                    src={`https://cdn.discordapp.com/app-assets/${discordData.activities[0].application_id}/${discordData.activities[0].assets.large_image}.png`}
+                                    alt="activity_large"
+                                />
+                            {:else}
+                                <img
+                                    class="absolute bottom-[-6px] right-[-6px] size-8 rounded-full border-2 border-ctp-mantle"
+                                    src="data:image/png;base64,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"
+                                    alt="activity_large"
+                                />
+                            {/if}
 
-                            {#if discordData.activities[0].assets.small_image}
+                            {#if discordData.activities[0].assets?.small_image}
                                 <img
                                     class="absolute bottom-[-6px] right-[-6px] size-8 rounded-full border-2 border-ctp-mantle"
                                     src={`https://cdn.discordapp.com/app-assets/${discordData.activities[0].application_id}/${discordData.activities[0].assets.small_image}.png`}
