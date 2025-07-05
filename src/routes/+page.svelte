@@ -142,7 +142,7 @@
                         <div class="my-auto ml-2 mr-4 relative">
                             {#if discordData.activities[0].assets?.large_image}
                                 <img
-                                    class="absolute bottom-[-6px] right-[-6px] size-8 rounded-full border-2 border-ctp-mantle"
+                                    class="rounded-md size-18"
                                     src={`https://cdn.discordapp.com/app-assets/${discordData.activities[0].application_id}/${discordData.activities[0].assets.large_image}.png`}
                                     alt="activity_large"
                                 />
@@ -156,7 +156,7 @@
 
                             {#if discordData.activities[0].assets?.small_image}
                                 <img
-                                    class="absolute bottom-[-6px] right-[-6px] size-8 rounded-full border-2 border-ctp-mantle"
+                                    class="size-18"
                                     src={`https://cdn.discordapp.com/app-assets/${discordData.activities[0].application_id}/${discordData.activities[0].assets.small_image}.png`}
                                     alt="activity_small"
                                 />
