@@ -61,14 +61,14 @@
         let string = "";
         
         if (hoursDiff > 0) {
-            string += `${hoursDiff.toString().padStart(2, '0')}h:`;
+            string += `${hoursDiff.toString().padStart(2, '0')}:`;
         }
 
-        if (minutesDiff > 0 || hoursDiff > 0) {
-            string += `${minutesDiff.toString().padStart(2, '0')}m:`;
-        }
+        
+        string += `${minutesDiff.toString().padStart(2, '0')}:`;
+        
 
-        return string + `${secondsDiff.toString().padStart(2, '0')}s`;
+        return string + `${secondsDiff.toString().padStart(2, '0')}`;
     }
 
     // bad trick to make the elapsed time go up
